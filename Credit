@@ -5,6 +5,10 @@ package com.exemple.model;
 public class Credit {
 
     private Long id_credit ;
+    
+    private Long id_client;
+    
+    private long id_produit;
 
     private String nom ;
 
