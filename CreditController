@@ -104,8 +104,7 @@ public class CreditController implements Initializable {
     public void UpdateTable(){
         col_id.setCellValueFactory(new PropertyValueFactory<Credit,Long>("id_client"));
         col_nom.setCellValueFactory(new PropertyValueFactory<Credit,String>("nom"));
-
-        col_tele.setCellValueFactory(new PropertyValueFactory<Credit,String>("montant"));
+        col_montant.setCellValueFactory(new PropertyValueFactory<Credit,String>("montant"));
 
 
         mytab.setItems(getDataCredits());
