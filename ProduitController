@@ -22,7 +22,7 @@ public class ProduitController implements Initializable {
     private TextField nom;
 
     @FXML
-    private TextField tele;
+    private TextField prix;
 
 
     @FXML
@@ -35,7 +35,7 @@ public class ProduitController implements Initializable {
     private TableColumn<Produit, String> col_nom;
 
     @FXML
-    private TableColumn<Produit, String> col_tele;
+    private TableColumn<Produit, String> col_prix;
 
 
     @FXML
@@ -106,7 +106,7 @@ public class ProduitController implements Initializable {
     public void UpdateTable(){
         col_id.setCellValueFactory(new PropertyValueFactory<Produit,Long>("id_produit"));
         col_nom.setCellValueFactory(new PropertyValueFactory<Produit,String>("nom"));
-
+        col_prix.setCellValueFactory(new PropertyValueFactory<Client,String>("prix"));
 
         mytab.setItems(getDataProduits());
     }
